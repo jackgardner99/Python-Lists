@@ -14,9 +14,21 @@ planet_list.extend(continued_list)
 
 print(planet_list)
 
-planet_list.insert(2, "Earth")
+planet_list.insert(1, "Earth")
 planet_list.insert(1, "Venus")
 
 add_planets("Pluto")
+
+print(planet_list)
+
+x = slice(0, 4)
+rocky_planets = []
+
+rocky_planets.append(planet_list[x])
+
+print(rocky_planets)
+print(planet_list)
+
+del planet_list[8]
 
 print(planet_list)
